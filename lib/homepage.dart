@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -19,6 +21,13 @@ class HomepageScreen extends StatelessWidget {
           children: [
             Text('Email: $email'),
             Text('Password: $password'),
+            SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              child: const Text('Show Keyboard!'),
+              onPressed: () {},
+            ),
           ],
         )),
       );

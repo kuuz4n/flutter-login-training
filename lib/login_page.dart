@@ -151,31 +151,62 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 50),
                   //Social Media
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      IconButton(
-                        onPressed: () => {},
-                        icon: ,
-                      ),
                       ElevatedButton(
-                        child: Text(''),
                         onPressed: () {},
+                        child:
+                            Image.asset('assets/images/brandico_facebook.png'),
                         style: ElevatedButton.styleFrom(
+                          side: BorderSide(
+                              width: 1.0,
+                              color: Color.fromRGBO(32, 171, 125, 1)),
                           padding: EdgeInsets.all(11.0),
-                          fixedSize: Size(82, 63),
+                          fixedSize: Size(89, 63),
+                          textStyle: GoogleFonts.exo(
+                              fontSize: 18, color: Colors.white),
                           elevation: 15,
                           primary: Color.fromRGBO(53, 52, 59, 1),
                         ),
                       ),
+                      SizedBox(
+                        width: 25,
+                      ),
                       ElevatedButton(
-                        child: Text(''),
                         onPressed: () {},
+                        child: Image.asset(
+                            'assets/images/akar-icons_google-contained-fill.png'),
                         style: ElevatedButton.styleFrom(
+                          side: BorderSide(
+                              width: 1.0,
+                              color: Color.fromRGBO(32, 171, 125, 1)),
                           padding: EdgeInsets.all(11.0),
-                          fixedSize: Size(82, 63),
+                          fixedSize: Size(89, 63),
+                          textStyle: GoogleFonts.exo(
+                              fontSize: 18, color: Colors.white),
                           elevation: 15,
                           primary: Color.fromRGBO(53, 52, 59, 1),
                         ),
                       ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Image.asset(
+                            'assets/images/ic_baseline-mobile-friendly.png'),
+                        style: ElevatedButton.styleFrom(
+                          side: BorderSide(
+                              width: 1.0,
+                              color: Color.fromRGBO(32, 171, 125, 1)),
+                          padding: EdgeInsets.all(11.0),
+                          fixedSize: Size(89, 63),
+                          textStyle: GoogleFonts.exo(
+                              fontSize: 18, color: Colors.white),
+                          elevation: 15,
+                          primary: Color.fromRGBO(53, 52, 59, 1),
+                        ),
+                      )
                     ],
                   ),
                   SizedBox(
