@@ -159,7 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                             Image.asset('assets/images/brandico_facebook.png'),
                         style: ElevatedButton.styleFrom(
                           side: BorderSide(
-                              width: 1.0,
+                              width: 0.5,
                               color: Color.fromRGBO(32, 171, 125, 1)),
                           padding: EdgeInsets.all(11.0),
                           fixedSize: Size(89, 63),
@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                             'assets/images/akar-icons_google-contained-fill.png'),
                         style: ElevatedButton.styleFrom(
                           side: BorderSide(
-                              width: 1.0,
+                              width: 0.5,
                               color: Color.fromRGBO(32, 171, 125, 1)),
                           padding: EdgeInsets.all(11.0),
                           fixedSize: Size(89, 63),
@@ -197,7 +197,7 @@ class _LoginPageState extends State<LoginPage> {
                             'assets/images/ic_baseline-mobile-friendly.png'),
                         style: ElevatedButton.styleFrom(
                           side: BorderSide(
-                              width: 1.0,
+                              width: 0.5,
                               color: Color.fromRGBO(32, 171, 125, 1)),
                           padding: EdgeInsets.all(11.0),
                           fixedSize: Size(89, 63),
