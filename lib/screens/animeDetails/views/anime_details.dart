@@ -3,18 +3,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:login_sample/model/fetchImageResponseModel.dart';
+import 'package:login_sample/screens/animeDetails/controller/animeDetailsController.dart';
 import 'package:login_sample/services/apiService.dart';
 
-class AnimeDetails extends StatelessWidget {
-  String title, synopsis, imgUrl;
-  AnimeDetails(
-      {Key? key,
-      required this.title,
-      required this.synopsis,
-      required this.imgUrl})
-      : super(key: key);
-
+class AnimeDetails extends GetView<AnimeDetailsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,20 +19,21 @@ class AnimeDetails extends StatelessWidget {
           Column(
             children: [
               Container(
-                child: Image.network(imgUrl, height: 300, fit: BoxFit.fill),
+                child: Image.network(controller.imageUrl,
+                    height: 300, fit: BoxFit.fill),
               ),
               const SizedBox(
                 height: 20,
               ),
               Text(
-                title,
+                controller.title,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  synopsis,
+                  controller.synopsis,
                   style: TextStyle(fontSize: 18),
                 ),
               ),

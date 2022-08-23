@@ -1,7 +1,9 @@
 // ignore_for_file: unnecessary_const
 
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'package:get/route_manager.dart';
+import 'package:login_sample/routes/route-list.dart';
+import 'package:login_sample/routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +15,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
+    return GetMaterialApp(
+      title: "Flutter Training",
+      getPages: Routes.routes,
+      initialRoute: RoutesList.LOGIN,
     );
   }
 }
